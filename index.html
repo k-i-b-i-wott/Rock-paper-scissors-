@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock paper Scissors</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+     <header>
+   
+     </header>
+    <sector class="container">
+      <div class="header">
+        <p>
+          &copy;2025 <a href="#">Biwott</a>
+        </p>
+        <div class="results">
+          <h1>Computer <span id="score">0</span></h1>
+
+          <h1><span id="score">0</span> Player </h1>
+        </div>
+      </div>
+      <div id="results">
+        <p>Computer <br>
+          <span id="icon">
+            &#9996;
+
+          </span>
+        </p>
+        <p id="draw">Draw</p>
+        <p>Player <br>
+          <span id="icon">
+            &#9996;
+
+          </span>
+        </p>
+      </div>
+
+      <div id="play">
+        <button setOnclick="rock()">&#9994; <br>Rock</button>
+        <button onclick="paper()">&#9995;  <br>Paper</button>
+        <button onclick="scissors()">&#9996; <br> Scissors</button>
+        
+      </div>
+    </sector>
+    
+   
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

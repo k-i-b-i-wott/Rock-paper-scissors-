@@ -1,21 +1,26 @@
-
-
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 body {
   margin: 0;
   display: flex;
   place-items: center;
+  font-size: smaller;
+  font-style: normal;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Press Start 2P", serif;
 }
 
 
 .container {
   min-width: 100vh;
   margin: 0 21.25em;
-  padding: 2rem;
+
   text-align: center;
   justify-content: space-evenly;
-  background-color: green;
+  background-color: rgb(85, 128, 0);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,19 +37,16 @@ body {
 }
 #play button{
   width: 100px;
-  height: 100px;
- 
-  font-size: 1.5rem;
+  height: 100px; 
+font-size: 1.5rem;
   border: none;
   cursor: pointer;
- 
- 
 }
 
 #icon{
   font-size: 5rem;
   width: 10rem;
-  height: 5rem;
+  height: 8rem;
   justify-content: center;
   gap: 1rem;  
   border: 5px dotted black;
@@ -66,9 +68,9 @@ body {
   margin-top: 0;
   
 }
-.results{
+/* #output{
   font-size: small;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-}
+} */

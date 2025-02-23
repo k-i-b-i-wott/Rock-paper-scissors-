@@ -1,7 +1,3 @@
-document.getElementById("rockbtn").addEventListener("click",() =>playGame('rock'));
-document.getElementById("paperbtn").addEventListener("click",() =>playGame('paper'));
-document.getElementById("scissorsbtn").addEventListener("click",() => playGame('scissors'));
-
 const choices=["rock","paper","scissors"];
 const resultDisplay=document.getElementById("resultDisplay");
 const computerDisplay=document.getElementById("computerIcon");
@@ -75,7 +71,7 @@ function playGame(playerChoice){
     resultDisplay.textContent=result;
     }
 
-
+window.playGame=playGame;
 
 
 

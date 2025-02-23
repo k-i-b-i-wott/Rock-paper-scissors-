@@ -5,19 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock paper Scissors</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <section class="container">
       <div class="header">
-       <div class="copy"> <p>&copy;2025 <a href="#">Biwott</a></p></div>
-        <div class="scores"> 
-          <p>Computer <span id="computerScore">0</span>  </p>         
-          <p> <span id="playerScore">0</span> Player</p>
-          
+        <div class="copy">
+          <p>&copy;2025 <a href="#">Biwott</a></p>
+        </div>
+        <div class="scores">
+          <p>Computer <span id="computerScore">0</span></p>
+          <p><span id="playerScore">0</span> Player</p>
         </div>
       </div>
       <div id="output">
@@ -25,7 +29,7 @@
           Computer <br />
           <span id="computerIcon"> &#9996; </span>
         </p>
-        <p id="resultDisplay"> <span class="content">Currently Draw</span></p>
+        <p id="resultDisplay"><span class="content">Currently Draw</span></p>
         <p id="playerDisplay">
           Player <br />
           <span id="playerIcon"> &#9996; </span>
@@ -33,15 +37,15 @@
       </div>
 
       <div id="play">
-        <button id="rockbtn">&#9994; <br />Rock</button>
-        <button id="paperbtn">&#9995; <br />Paper</button>
-        <button id="scissorsbtn">
+        <button onclick="playGame('rock')">&#9994; <br />Rock</button>
+        <button onclick="playGame('paper')">&#9995; <br />Paper</button>
+        <button onclick="playGame('scissors')">
           &#9996; <br />
           Scissors
         </button>
       </div>
     </section>
 
-    <script defer src="./src/index.js"></script>
+    <script defer src="/src/index.js"></script>
   </body>
 </html>

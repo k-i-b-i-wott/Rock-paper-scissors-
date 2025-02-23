@@ -1,3 +1,7 @@
+document.getElementById("rockbtn").addEventListener("click",() =>playGame('rock'));
+document.getElementById("paperbtn").addEventListener("click",() =>playGame('paper'));
+document.getElementById("scissorsbtn").addEventListener("click",() => playGame('scissors'));
+
 const choices=["rock","paper","scissors"];
 const resultDisplay=document.getElementById("resultDisplay");
 const computerDisplay=document.getElementById("computerIcon");
@@ -7,6 +11,8 @@ const computerScore=document.getElementById("computerScore");
 
 let playerScoreCount=0;
 let computerScoreCount=0;
+
+
 
 
 

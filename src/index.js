@@ -11,7 +11,6 @@ let computerScoreCount=0;
 
 
 
-
 function playGame(playerChoice){
     const computerChoice=choices[Math.floor(Math.random()*3)];
     let result="";

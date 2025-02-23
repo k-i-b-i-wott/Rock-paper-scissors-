@@ -21,61 +21,52 @@ function playGame(playerChoice){
         switch (playerChoice){
             case "rock":
                 if(computerChoice === "scissors"){
-                    result="You Win";
+                    result="Player Wins";
+                    playerScoreCount++;
+                    playerScore.textContent= playerScoreCount;
                 }
                 else{
-                    result="You Lose";
+                    result="Computer Wins";
+                    computerScoreCount++;
+                    computerScore.textContent= computerScoreCount;
                 }
                 break;
             case "scissors":
                 if(computerChoice === "paper"){
-                    result="You Win";
+                    result="Player Wins";
+                    playerScoreCount++;
+                    playerScore.textContent= playerScoreCount;
                 }
                 else{
-                    result="You Lose";
+                    result="Computer Wins";
+                    computerScoreCount++;
+                    computerScore.textContent= computerScoreCount;
                 }
                 break;
             case "paper":
                 if(computerChoice === "rock"){
-                    result="You Win";
+                    result="Player Wins";
+                    playerScoreCount++;
+                    playerScore.textContent= playerScoreCount;
                 } else{
-                    result="You Lose";
+                    result="Computer Wins";
+                    computerScoreCount++;
+                    computerScore.textContent= computerScoreCount;
                 }
                 break;
         }  
-      }
+    }
 
-      const emojiMap = {
+    const emojiMap = {
         rock: "&#9994;",
         paper: "&#9995;",
         scissors: "&#9996;"
-      };
+    };
 
 
-       playerDisplay.innerHTML=emojiMap[playerChoice];
-       computerDisplay.innerHTML=emojiMap[computerChoice];
-       resultDisplay.textContent=result;
-
-       switch(result){
-        case "You Win":            
-            playerScore.textContent = playerScoreCount;
-            playerDisplay.classList.add("Player wins");
-            break;
-        case "You Lose":
-                       computerScore.textContent = computerScoreCount;
-            computerDisplay.classList.add("Computer wins");
-            break;      
-       }
-
-       if(result === "You Win"){
-        playerScoreCount++;
-        playerScore.innerHTML = playerScoreCount;
-       }
-       else if(result === "You Lose"){
-        computerScoreCount++;
-        computerScore.innerHTML = computerScoreCount;
-       }
-
+    playerDisplay.innerHTML=emojiMap[playerChoice];
+    computerDisplay.innerHTML=emojiMap[computerChoice];
+    resultDisplay.textContent=result;
     }
 
 

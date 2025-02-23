@@ -10,46 +10,59 @@ body {
   font-style: normal;
   min-width: 320px;
   min-height: 100vh;
-  font-family: "Press Start 2P", serif;
+  font-family: "Press Start 2P", serif;  
+  justify-content: center;
 }
 
 
 .container {
-  min-width: 100vh;
-  margin: 0 21.25em;
-
-  text-align: center;
-  justify-content: space-evenly;
-  background-color: rgb(85, 128, 0);
+  width: 100vh;
+  text-align: center;  
+  background-color: rgb(98, 128, 0);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
+  flex-direction: column; 
+  justify-content: space-between;
+  margin-top: 0;
+  
 }
-
+.scores{
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-right: 2rem;
+  flex-wrap: wrap;
+}
 
 #play{
   font-size: 2rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
-  
+  margin-bottom: 5rem;
+  flex-wrap: wrap;  
 }
 #play button{
   width: 100px;
   height: 100px; 
-font-size: 1.5rem;
+  font-size: 1.5rem;
   border: none;
   cursor: pointer;
 }
 
-#icon{
-  font-size: 5rem;
-  width: 10rem;
-  height: 8rem;
+
+#computerIcon,#playerIcon{
+  font-size: 7rem;
+  width: 15rem;
+  height: 20rem;
   justify-content: center;
   gap: 1rem;  
-  border: 5px dotted black;
+  border: 2px dashed black;
+  padding-bottom: 2rem;
+}
+#playerIcon{
+ margin-top: 3rem;
 }
 
 
@@ -65,12 +78,25 @@ font-size: 1.5rem;
 .header{
   display: flex;
   justify-content: space-between;
-  margin-top: 0;
-  
+  margin-top: 0;  
 }
-/* #output{
-  font-size: small;
+.copy p{
+  align-self: flex-start;
+
+}
+#output{
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-} */
+  flex-direction: column;
+  
+  padding-bottom: 2rem;
+
+}
+#resultDisplay{
+  background-color: rgb(255, 191, 0);
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+   
+}

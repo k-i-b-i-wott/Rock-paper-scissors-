@@ -42,6 +42,8 @@ body {
   gap: 2rem;
   margin-bottom: 5rem;
   flex-wrap: wrap;  
+  border-radius: 2rem;
+  font-family: "Press Start 2P", serif;
 }
 #play button{
   width: 100px;
@@ -49,6 +51,7 @@ body {
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
+  border-radius: .5rem;
 }
 
 
@@ -60,6 +63,7 @@ body {
   gap: 1rem;  
   border: 2px dashed black;
   padding-bottom: 2rem;
+  
 }
 #playerIcon{
  margin-top: 3rem;

@@ -82,15 +82,12 @@ body {
 }
 .copy p{
   align-self: flex-start;
-
 }
 #output{
   display: flex;
   flex-direction: column;
   
-  padding-bottom: 2rem;
-
-}
+  padding-bottom: 2rem;}
 #resultDisplay{
   background-color: rgb(255, 191, 0);
   height: 4rem;
@@ -98,5 +95,4 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-   
 }
